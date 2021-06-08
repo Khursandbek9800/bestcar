@@ -1,0 +1,55 @@
+@import "styles/constants";
+
+.container{
+  display: flex;
+  .left{
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -130px;
+    width: 30%px;
+    height: 100%;
+    background-color:$bg-color;
+    z-index: 120;
+    .links{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 60%;
+      margin-top: 76px;
+      .link{
+        padding-left: 10px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: $black-color;
+        font-weight: bold;
+        border-bottom: 1px solid $grayColor;
+        &:first-child{
+          border-top: 1px solid white;
+          padding-top: 15px;
+        }
+        .inner{
+          padding-left: 15px;
+          &.another{
+            color: #249126;
+            &:after{
+              width: 100%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+@media (min-width: 990px) {
+  .container{
+    display: none;
+  }
+
+}

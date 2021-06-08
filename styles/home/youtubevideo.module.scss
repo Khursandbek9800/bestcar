@@ -1,0 +1,28 @@
+.videoResponsivee {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 60vh;
+
+    .iframe{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media (max-width: 784px) {
+    .videoResponsivee{
+        height: 100vh;
+        .iframe{
+            left: 5%;
+            top: 0;
+            height: 30%;
+            width: 90%;
+            position: absolute;
+        }
+    }
+}
+

@@ -1,0 +1,230 @@
+@import "styles/constants";
+
+.wrapper{
+  background-color: #F8F8F8;
+  height: 100vh;
+  margin-top: -5px;
+  padding-bottom: 60px;
+  .container{
+    width: 80%;
+    margin-left: 10%;
+    .header{
+      padding-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .hTitle{
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        color: $blueColor;
+        text-shadow: 1px 1px 1px $blueOverlay;
+      }
+      .hText{
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        color: $textColor;
+        text-align: center;
+      }
+    }
+    .content{
+      margin-top: 3%;
+      display: flex;
+      flex-direction: row;
+      .left{
+        width: 100%;
+
+      }
+      .right{
+        .title{
+          padding-top: 5%;
+          font-size: 32px;
+          font-family: 'Roboto', sans-serif;
+          color: $black-color;
+          text-shadow: 2px 2px #FFFFff;
+          font-weight: bold;
+        }
+        .text{
+          font-family: 'Roboto', sans-serif;
+          color: gray;
+          text-align: justify;
+        }
+        .lists{
+          display: flex;
+          align-items: baseline;
+          .list{
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+
+            span{
+              color: $blueColor;
+              font-style: italic;
+              font-size: 16px;
+            }
+            .lTitle{
+              display: flex;
+              font-size: 20px;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 600;
+            }
+          }
+        }
+        .btn{
+          margin-top: 40px;
+          background-color: $blueColor;
+          display: inline-block;
+          padding: 10px 30px;
+          border-radius: 40px;
+          font-size: 18px;
+          color: white;
+          border: 1px solid #34B2FF;
+          transition: all ease-in-out 0.3s;
+          &:hover{
+            background-color: transparent;
+            cursor: pointer;
+            border: 1px solid #34B2FF;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .wrapper{
+    .container{
+      .header{
+        .hTitle{
+          font-size: 32px;
+        }
+      }
+      .content{
+        .right{
+        width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .wrapper{
+    .container{
+      .header{
+        .hTitle{
+          font-size: 32px;
+        }
+      }
+      .content{
+        .right{
+          .title{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 790px) {
+  .wrapper{
+    height: 120vh;
+    .container{
+      .content{
+        flex-direction: column;
+        .left{
+          height: 30vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+        }
+      }
+    }
+  }
+}
+@media (max-width: 637px) {
+
+    .wrapper{
+
+      .container{
+        .header{
+          .hTitle{
+            font-size: 24px;
+          }
+        }
+        .content{
+
+         .right{
+           .title{
+             font-size: 22px;
+           }
+           .text{
+             font-size: 14px;
+           }
+           .lists{
+             .list{
+               .lTitle{
+                 font-size: 16px;
+               }
+             }
+           }
+           .btn{
+             padding: 10px 15px;
+             font-size: 14px;
+           }
+         }
+        }
+      }
+    }
+  }
+
+@media (max-width: 474px) {
+
+  .wrapper{
+
+    .container{
+      .header{
+        .hTitle{
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      .content{
+
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .wrapper{
+    height: 120vh;
+    .container{
+
+      .content{
+        .left{
+          height: 25vh;
+        }
+        .right{
+          .title{
+            font-size: 20px;
+          }
+        .lists{
+          .list{
+            margin-left: 0;
+            span{
+              font-size: 14px;
+            }
+            .lTitle{
+              font-size: 16px;
+            }
+          }
+
+
+
+        }
+        }
+      }
+    }
+  }
+}
